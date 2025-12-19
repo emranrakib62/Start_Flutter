@@ -10,6 +10,38 @@ class Class3 extends StatelessWidget {
       //backgroundColor: Colors.grey[300],
       //backgroundColor: Colors.grey.withOpacity(0.5),
       backgroundColor: Colors.grey.shade200,
+      appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
+        title: Text('Class-3',style: TextStyle(
+          color: Colors.white
+        ),),
+        centerTitle: true,
+
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+
+            ElevatedButton(
+                style:ElevatedButton.styleFrom(
+                  backgroundColor:Colors.green,
+                      foregroundColor: Colors.white,
+                    shape:RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10 )
+                    )
+                ) ,
+
+                onPressed: (){
+
+
+              print('Clicked');
+
+            }, child: Text('Submit'))
+          ],
+
+        ),
+      ),
     );
   }
 }
