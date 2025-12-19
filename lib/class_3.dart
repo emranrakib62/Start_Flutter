@@ -61,11 +61,46 @@ class Class3 extends StatelessWidget {
 
                     }, child: Text('Submit'))
             ),
+SizedBox(height: 10,),
+            OutlinedButton(
+                style:OutlinedButton.styleFrom(
 
-            OutlinedButton(onPressed: (){}, child: Text('Submit'))
+                ),
+                onPressed: (){}, child: Text('Submit')),
+
+TextButton(onPressed: (){}, child: Text('See More')),
+Icon(
+  Icons.phone,
+      size:50,
+  color: Colors.orange,
+),
+            
+ IconButton(onPressed: (){
+
+   print('Delated');
+ }, icon: Icon(Icons.delete,color: Colors.red,size: 50,)),
 
 
+    GestureDetector(
+      onTap: (){
+print('Tab');
+      },
+        onDoubleTap: (){
+        print('D tap');
+        },
 
+        onLongPress: (){
+        print('Long Tap');
+        },
+
+    child: Text('This is test text')),
+
+InkWell(
+  onTap: (){
+    print('Ink well Tap');
+  },
+  child: Text('Text test-2'),
+)
           ],
 
         ),
