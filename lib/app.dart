@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_projects/class_3.dart';
 import 'package:flutter_projects/home.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Emranul Hoque',
-      home: Home(),
+      home: Class3(),
     );
   }
 }
