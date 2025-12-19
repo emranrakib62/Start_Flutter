@@ -37,7 +37,35 @@ class Class3 extends StatelessWidget {
 
               print('Clicked');
 
-            }, child: Text('Submit'))
+            }, child: Text('Submit')),
+    SizedBox(
+     height: 20,
+
+      ),
+            SizedBox(
+              height: 50,
+              width: 150,
+              child:ElevatedButton(
+                    style:ElevatedButton.styleFrom(
+                        backgroundColor:Colors.green,
+                        foregroundColor: Colors.white,
+                        shape:RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10 )
+                        )
+                    ) ,
+
+                    onPressed: (){
+
+
+                      print('Clicked');
+
+                    }, child: Text('Submit'))
+            ),
+
+            OutlinedButton(onPressed: (){}, child: Text('Submit'))
+
+
+
           ],
 
         ),
