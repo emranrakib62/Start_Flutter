@@ -11,6 +11,7 @@ class Module11Class1 extends StatelessWidget{
 body: SafeArea(
   child:Padding(padding: const EdgeInsets.all(8.0),
     child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
 children: [
 
   TextField(
@@ -36,6 +37,7 @@ decoration: InputDecoration(
   SizedBox(height: 20,),
   TextField(
     keyboardType: TextInputType.number,
+    obscureText: true,
     decoration: InputDecoration(
         hintText: 'Enter your passward',
         hintStyle: TextStyle(
@@ -54,6 +56,23 @@ decoration: InputDecoration(
     ),
 
   ),
+
+
+SizedBox(height: 20,),
+   SizedBox(
+     width: 200,
+     height: 40,
+
+     child:ElevatedButton(
+
+    style: ElevatedButton.styleFrom(
+      backgroundColor: Colors.blue,
+      foregroundColor: Colors.white,
+
+    ),
+
+
+      onPressed: (){}, child: Text('Submit')))
 ]
     )),
 
