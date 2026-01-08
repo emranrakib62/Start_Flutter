@@ -14,6 +14,7 @@ body: SafeArea(
 children: [
 
   TextField(
+    keyboardType: TextInputType.phone,
 decoration: InputDecoration(
   hintText: 'Enter your number',
   hintStyle: TextStyle(
@@ -31,7 +32,28 @@ decoration: InputDecoration(
   suffixIcon: Icon(Icons.check)
 ),
 
-  )
+  ),
+  SizedBox(height: 20,),
+  TextField(
+    keyboardType: TextInputType.number,
+    decoration: InputDecoration(
+        hintText: 'Enter your passward',
+        hintStyle: TextStyle(
+            fontSize: 18
+        ),
+        labelText: 'Passward',
+        labelStyle: TextStyle(
+            fontSize: 18
+        ),
+        border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(50)
+        ),
+
+        prefixIcon: Icon(Icons.lock),
+        suffixIcon: Icon(Icons.remove_red_eye)
+    ),
+
+  ),
 ]
     )),
 
