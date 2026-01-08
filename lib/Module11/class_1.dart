@@ -9,6 +9,7 @@ class Module11Class1 extends StatelessWidget{
     return Scaffold(
 
 body: SafeArea(
+  child:Padding(padding: const EdgeInsets.all(8.0),
     child: Column(
 children: [
 
@@ -24,15 +25,17 @@ decoration: InputDecoration(
   ),
   border: OutlineInputBorder(
     borderRadius: BorderRadius.circular(50)
-  )
-    
+  ),
+
+  prefixIcon: Icon(Icons.phone),
+  suffixIcon: Icon(Icons.check)
 ),
 
   )
 ]
     )),
 
-    );
+));
 
   }
 }
