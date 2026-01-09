@@ -8,6 +8,9 @@ class Module11Class1 extends StatelessWidget{
   Widget build(BuildContext context) {
 
    TextEditingController phoneController=TextEditingController();
+   TextEditingController passwardcontroller=TextEditingController();
+
+
     return Scaffold(
 
 body: SafeArea(
@@ -17,6 +20,7 @@ body: SafeArea(
 children: [
 
   TextField(
+    controller: phoneController,
     keyboardType: TextInputType.phone,
 decoration: InputDecoration(
   hintText: 'Enter your number',
@@ -38,6 +42,7 @@ decoration: InputDecoration(
   ),
   SizedBox(height: 20,),
   TextField(
+    controller: passwardcontroller,
     keyboardType: TextInputType.number,
     obscureText: true,
     decoration: InputDecoration(
@@ -74,7 +79,21 @@ SizedBox(height: 20,),
     ),
 
 
-      onPressed: (){}, child: Text('Submit')))
+      onPressed: (){
+      if(phoneController.text.isEmpty){
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Please Enter Phone number'))
+        );
+      }
+else if(phoneController.text.length!=11){
+        ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Please Enter Correct Phone number'))
+        );
+      }else{
+  passwardcontroller.clear();
+      }
+
+      }, child: Text('Submit')))
 ]
     )),
 
