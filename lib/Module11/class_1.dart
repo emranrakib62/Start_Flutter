@@ -95,6 +95,8 @@ else if(phoneController.text.length!=11){
 
       }, child: Text('Submit'))
    ),
+
+  SizedBox(height: 20),
   Container(
     alignment: Alignment.center,
     height: 70,
