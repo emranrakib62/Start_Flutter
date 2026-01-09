@@ -93,7 +93,36 @@ else if(phoneController.text.length!=11){
   passwardcontroller.clear();
       }
 
-      }, child: Text('Submit')))
+      }, child: Text('Submit'))
+   ),
+  Container(
+    alignment: Alignment.center,
+    height: 70,
+    width: 200,
+    
+      child:Text('Container test'),
+    decoration: BoxDecoration(
+      color: Colors.orange,
+      borderRadius: BorderRadius.circular(20),
+        border:Border.all(
+          width: 2,
+          color: Colors.black
+        ),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.grey.withOpacity(0.3),
+          offset: Offset(4,10),
+        )
+      ]
+
+
+
+    ),
+  )
+
+
+
+
 ]
     )),
 
