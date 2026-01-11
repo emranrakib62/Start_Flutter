@@ -18,7 +18,8 @@ class Module11Class2 extends StatelessWidget{
 
 
         children: [
-          Image.network('https://img.freepik.com/free-photo/waterfall-chae-son-national-park-lampang-thailand_554837-639.jpg?semt=ais_hybrid&w=740&q=80')
+          Image.network('https://img.freepik.com/free-photo/waterfall-chae-son-national-park-lampang-thailand_554837-639.jpg?semt=ais_hybrid&w=740&q=80'),
+
         ],
       ),
     ));
