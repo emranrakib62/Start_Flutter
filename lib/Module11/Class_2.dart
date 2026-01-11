@@ -14,6 +14,9 @@ class Module11Class2 extends StatelessWidget{
         title: Text('Login'),
       ),
       body: SafeArea(
+       child: Padding(
+          padding: const EdgeInsets.all(10.0),
+
         child: Column(
 
 
@@ -31,7 +34,7 @@ Image.asset('assets/rakib.jpg',
           Text('Login with phone and passwoard',
 
           style: TextStyle(
-            fontSize: 25,
+            fontSize: 15,
             fontWeight: FontWeight.w500
           ),
           ),
@@ -50,12 +53,13 @@ SizedBox(height: 20,),
               border: OutlineInputBorder(),
             ),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 10,),
 
            SizedBox(
              width: 200,
 
            child: ElevatedButton(
+
              style: ElevatedButton.styleFrom(
                  backgroundColor: Colors.orange,
                foregroundColor: Colors.white,
@@ -63,7 +67,7 @@ SizedBox(height: 20,),
                onPressed: (){}, child: Text('Login')
            ))
         ],
-      ),
+      ),),
     ));
   }
 }
