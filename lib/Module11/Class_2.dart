@@ -25,14 +25,14 @@ final _formkey=GlobalKey<FormState>();
           
           children: [
             Image.network('https://img.freepik.com/free-photo/waterfall-chae-son-national-park-lampang-thailand_554837-639.jpg?semt=ais_hybrid&w=740&q=80',
-              height: 200,
+              height: 100,
               width: 200,
           
             ),
           SizedBox(height: 20,),
           Image.asset('assets/rakib.jpg',
-            height: 200,
-            width: 300,
+            height: 100,
+            width: 200,
           ),
             Text('Login with phone and passwoard',
           
@@ -48,6 +48,15 @@ final _formkey=GlobalKey<FormState>();
                 hintText: 'Phone number',
                     border: OutlineInputBorder(),
               ),
+
+              validator: (value){
+                if(value==null || value.isEmpty){
+                  return 'Please Enter phone number';
+                }else if(value.length !=11){
+                  return 'Please Enter Correct Phone number';
+                }
+              },
+
             ),
           SizedBox(height: 20,),
             TextFormField(
