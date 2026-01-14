@@ -66,6 +66,18 @@ final _formkey=GlobalKey<FormState>();
                 hintText: 'passward',
                 border: OutlineInputBorder(),
               ),
+
+              validator: (value){
+                if(value==null || value.isEmpty){
+                  return 'Please Enter passward';
+                }else if(value.length <6){
+                  return 'Passward must be at least 6 chracters';
+                }else{
+                  return null;
+                }
+              },
+
+
             ),
             SizedBox(height: 10,),
           
@@ -78,7 +90,12 @@ final _formkey=GlobalKey<FormState>();
                    backgroundColor: Colors.orange,
                  foregroundColor: Colors.white,
                ),
-                 onPressed: (){}, child: Text('Login')
+                 onPressed: (){
+
+
+
+
+                 }, child: Text('Login')
              ))
           ],
                 ),
