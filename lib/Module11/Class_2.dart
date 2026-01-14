@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../home.dart';
+
 class Module11Class2 extends StatelessWidget{
   const Module11Class2({super.key});
 
@@ -91,7 +93,9 @@ final _formkey=GlobalKey<FormState>();
                  foregroundColor: Colors.white,
                ),
                  onPressed: (){
-
+if(_formkey.currentState!.validate()){
+ Navigator.push(context,MaterialPageRoute(builder: (context)=>Home()));
+}
 
 
 
