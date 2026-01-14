@@ -100,7 +100,18 @@ if(_formkey.currentState!.validate()){
 
 
                  }, child: Text('Login')
-             ))
+             )),
+            
+            
+            
+            Stack(
+              children: [
+                CircleAvatar(
+                  radius: 70,
+                  backgroundImage: NetworkImage("https://img.freepik.com/free-photo/waterfall-chae-son-national-park-lampang-thailand_554837-639.jpg?semt=ais_hybrid&w=740&q=80"),
+                ),
+              ],
+            )
           ],
                 ),
         ),),
