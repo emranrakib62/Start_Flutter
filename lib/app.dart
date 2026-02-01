@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_projects/Module11/class_1.dart';
-import 'package:flutter_projects/class_3.dart';
-import 'package:flutter_projects/home.dart';
-
-import 'Module11/Class_2.dart';
+import 'package:flutter_projects/Module11/Class_2.dart';
+import 'Assignment/main1.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -11,14 +8,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme:ThemeData(
-        brightness: Brightness.dark,
-            primaryColor: Colors.deepPurple,
-        primarySwatch: Colors.deepPurple,
-          scaffoldBackgroundColor: Colors.grey.shade200
-      ) ,
-
       title: 'Emranul Hoque',
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.deepPurple,
+        scaffoldBackgroundColor: Colors.blue.shade200,
+      ),
       home: Module11Class2(),
     );
   }
