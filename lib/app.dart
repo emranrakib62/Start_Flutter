@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter 14',
 
       theme: ThemeData(
-        brightness: Brightness.dark,
+        brightness: Brightness.light,
         primarySwatch: Colors.deepPurple,
 
         inputDecorationTheme: InputDecorationTheme(
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
 
         appBarTheme: AppBarTheme(
-          backgroundColor: Colors.deepPurple,
+          backgroundColor: Colors.blue,
           centerTitle: true,
 
 

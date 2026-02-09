@@ -13,7 +13,6 @@ TextEditingController passwardController=TextEditingController();
 final _formkey=GlobalKey<FormState>();
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.orange,
         title: Text('Login'),
       ),
       body: SafeArea(
