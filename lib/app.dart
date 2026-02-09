@@ -30,6 +30,12 @@ class MyApp extends StatelessWidget {
 
 
         ),
+
+        textTheme:TextTheme(
+          titleLarge: TextStyle(fontSize: 25)
+
+
+        )
       ),
 
       home: Module11Class2(),

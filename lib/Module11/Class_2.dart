@@ -37,10 +37,8 @@ final _formkey=GlobalKey<FormState>();
           ),
             Text('Login with phone and passwoard',
           
-            style: TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w500
-            ),
+            style: Theme.of(context).textTheme.titleLarge
+
             ),
             SizedBox(height: 20,),
             TextFormField(
