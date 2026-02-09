@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/Module11/Class_2.dart';
-import 'Assignment/main1.dart';
+import 'package:flutter_projects/Module11/class_1.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -8,12 +8,30 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Emranul Hoque',
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter 14',
+
       theme: ThemeData(
         brightness: Brightness.dark,
         primarySwatch: Colors.deepPurple,
-        scaffoldBackgroundColor: Colors.blue.shade200,
+
+        inputDecorationTheme: InputDecorationTheme(
+          hintStyle: TextStyle(fontSize: 18),
+          labelStyle: TextStyle(fontSize: 18),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+        ),
+
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.deepPurple,
+          centerTitle: true,
+
+
+
+        ),
       ),
+
       home: Module11Class2(),
     );
   }
