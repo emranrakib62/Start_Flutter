@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/Module11/Class_2.dart';
+import 'package:flutter_projects/Module11/Class_3.dart';
 import 'package:flutter_projects/Module11/class_1.dart';
 
 class MyApp extends StatelessWidget {
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
         )
       ),
 
-      home: Module11Class2(),
+      home: Module11Class3(),
     );
   }
 }
