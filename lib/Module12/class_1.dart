@@ -20,7 +20,26 @@ class Module12Class1 extends StatelessWidget {
                   color: Colors.red,
                   height: 200,
                   width: 200,
+                ),
+
+                Positioned(
+                  left: 10,
+                  child: Container(
+                  color: Colors.blue,
+                  height: 180,
+                  width: 180,
+                ),
+                ),
+
+                Container(
+                  color: Colors.green,
+                  height: 150,
+                  width: 150,
                 )
+
+
+
+
               ],
             )
           ],
