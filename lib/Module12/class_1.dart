@@ -55,6 +55,25 @@ Stack(
       width:double.infinity,
       fit: BoxFit.cover,
     ),
+Positioned(
+  top: 10,
+  left: 10,
+  child: Container(
+    padding: EdgeInsets.symmetric(horizontal: 10,vertical: 4),
+    decoration: BoxDecoration(
+      color: Colors.green,
+      borderRadius: BorderRadius.circular(10)
+    ),
+    child: Text('Best Deal',
+    style: TextStyle(
+      color: Colors.white,fontSize: 12,
+    ),
+    ),
+
+  ),
+)
+
+
 
   ],
 )
