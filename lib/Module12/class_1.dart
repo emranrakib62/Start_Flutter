@@ -56,42 +56,32 @@ Stack(
       width:double.infinity,
       fit: BoxFit.cover,
     ),
-    Positioned(
-  top: 10,
-  left: 10,
-  child: Container(
-    padding: EdgeInsets.symmetric(horizontal: 10,vertical: 4),
-    decoration: BoxDecoration(
-      color: Colors.green,
-      borderRadius: BorderRadius.circular(10)
-    ),
-    child: Text('Best Deal',
-    style: TextStyle(
-      color: Colors.white,fontSize: 12,
-    ),
-    ),
-
-  ),
-),
-
-
-    Positioned(
-      top: 10,
-      left: 10,
-      child: Container(
+    Row(
+      children: [
+        Positioned(
+          top: 10,
+          left: 10,
+          child: Container(
         padding: EdgeInsets.symmetric(horizontal: 10,vertical: 4),
         decoration: BoxDecoration(
-            color: Colors.green,
-            borderRadius: BorderRadius.circular(10)
+          color: Colors.green,
+          borderRadius: BorderRadius.circular(10)
         ),
         child: Text('Best Deal',
-          style: TextStyle(
-            color: Colors.white,fontSize: 12,
-          ),
+        style: TextStyle(
+          color: Colors.white,fontSize: 12,
+        ),
         ),
 
-      ),
-    )
+          ),
+        ),
+        Spacer(),
+        IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border,color: Colors.white,))
+      ],
+    ),
+
+
+    
 
 
 
