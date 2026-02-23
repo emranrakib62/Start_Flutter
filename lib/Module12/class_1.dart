@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 class Module12Class1 extends StatelessWidget {
   const Module12Class1({super.key});
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,9 +46,16 @@ class Module12Class1 extends StatelessWidget {
 
               ],
             ),
+
+SizedBox(height: 10,),
 Stack(
   children: [
-    Image.network('https://images.pexels.com/photos/1172675/pexels-photo-1172675.jpeg')
+    Image.network('https://images.pexels.com/photos/1172675/pexels-photo-1172675.jpeg',
+      height:180,
+      width:double.infinity,
+      fit: BoxFit.cover,
+    ),
+
   ],
 )
             
