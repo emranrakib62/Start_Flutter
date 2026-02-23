@@ -455,18 +455,25 @@ body: GridView.builder(
   ),
 itemCount: 20,
   itemBuilder: (context,index){
-return Card(
-  color:Colors.red,
-  child:Column(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: [
-      Text(index.toString(),style:TextStyle(color: Colors.white,fontSize: 20),),
-      Icon(Icons.phone),
-      Text('Add Money')
+return Padding(
+  padding: const EdgeInsets.all(8.0),
+  child: Card(
+    elevation: 10,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(25)
+    ),
+    color:Colors.red,
+    child:Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(index.toString(),style:TextStyle(color: Colors.white,fontSize: 20),),
+        Icon(Icons.phone,size: 40,color: Colors.white,),
+        Text('Add Money')
 
-    ],
+      ],
+    ),
+
   ),
-
 );
   },
 
