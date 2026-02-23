@@ -14,7 +14,20 @@ class MyApp extends StatelessWidget {
 
       theme: ThemeData(
         brightness: Brightness.light,
+          primaryColor: Colors.deepPurple,
         primarySwatch: Colors.deepPurple,
+          scaffoldBackgroundColor: Colors.blue.shade50,
+          elevatedButtonTheme: ElevatedButtonThemeData(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.black,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8)
+                  )
+              )
+          ),
+
+
 
         inputDecorationTheme: InputDecorationTheme(
           hintStyle: TextStyle(fontSize: 18),
