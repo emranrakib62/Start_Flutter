@@ -24,6 +24,7 @@ class Module12Class1 extends StatelessWidget {
 
                 Positioned(
                   left: 10,
+                  top: 10,
                   child: Container(
                   color: Colors.blue,
                   height: 180,
@@ -31,10 +32,14 @@ class Module12Class1 extends StatelessWidget {
                 ),
                 ),
 
-                Container(
-                  color: Colors.green,
-                  height: 150,
-                  width: 150,
+                Positioned(
+                  left: 25,
+                  top: 25,
+                  child: Container(
+                    color: Colors.green,
+                    height: 150,
+                    width: 150,
+                  ),
                 )
 
 
