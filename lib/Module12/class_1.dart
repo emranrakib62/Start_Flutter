@@ -42,11 +42,15 @@ class Module12Class1 extends StatelessWidget {
                   ),
                 )
 
-
-
-
               ],
-            )
+            ),
+Stack(
+  children: [
+    Image.network('https://images.pexels.com/photos/1172675/pexels-photo-1172675.jpeg')
+  ],
+)
+            
+
           ],
         ),
       ),
