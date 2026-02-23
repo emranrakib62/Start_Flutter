@@ -3,6 +3,8 @@ import 'package:flutter_projects/Module11/Class_2.dart';
 import 'package:flutter_projects/Module11/Class_3.dart';
 import 'package:flutter_projects/Module11/class_1.dart';
 
+import 'Module12/class_1.dart';
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -52,7 +54,7 @@ class MyApp extends StatelessWidget {
         )
       ),
 
-      home: Module11Class3(),
+      home: Module12Class1(),
     );
   }
 }

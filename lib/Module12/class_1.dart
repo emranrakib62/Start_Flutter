@@ -4,6 +4,29 @@ class Module12Class1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Stack'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Stack(
+              children: [
+
+
+                Container(
+                  color: Colors.red,
+                  height: 200,
+                  width: 200,
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+
+    );
   }
 }
