@@ -48,6 +48,7 @@ class Module12Class1 extends StatelessWidget {
             ),
 
 SizedBox(height: 10,),
+
 Stack(
   children: [
     Image.network('https://images.pexels.com/photos/1172675/pexels-photo-1172675.jpeg',
@@ -55,7 +56,7 @@ Stack(
       width:double.infinity,
       fit: BoxFit.cover,
     ),
-Positioned(
+    Positioned(
   top: 10,
   left: 10,
   child: Container(
@@ -71,12 +72,50 @@ Positioned(
     ),
 
   ),
-)
+),
+
+
+    Positioned(
+      top: 10,
+      left: 10,
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 10,vertical: 4),
+        decoration: BoxDecoration(
+            color: Colors.green,
+            borderRadius: BorderRadius.circular(10)
+        ),
+        child: Text('Best Deal',
+          style: TextStyle(
+            color: Colors.white,fontSize: 12,
+          ),
+        ),
+
+      ),
+    )
 
 
 
   ],
-)
+),
+            SizedBox(height: 10,),
+            Stack(
+              children: [
+                Image.network('https://images.pexels.com/photos/1172675/pexels-photo-1172675.jpeg',
+                  height:300,
+                  width:double.infinity,
+                  fit: BoxFit.cover,
+                ),
+                Positioned(
+                  top: 200,
+                  left: 20,
+                  right: 20,
+                  child: ElevatedButton(onPressed: (){}, child:Text('Book Now',style: TextStyle(fontSize: 16),))
+                ),
+
+
+              ],
+            ),
+
             
 
           ],
