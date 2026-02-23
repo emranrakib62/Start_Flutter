@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_projects/Module11/Class_2.dart';
 import 'package:flutter_projects/Module11/Class_3.dart';
 import 'package:flutter_projects/Module11/class_1.dart';
+import 'package:flutter_projects/Module12/module_12_grid.dart';
 
 import 'Module12/class_1.dart';
 
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
         )
       ),
 
-      home: Module12Class1(),
+      home: Module12Grid(),
     );
   }
 }

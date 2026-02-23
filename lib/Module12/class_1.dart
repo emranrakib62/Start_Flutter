@@ -56,6 +56,11 @@ Stack(
       width:double.infinity,
       fit: BoxFit.cover,
     ),
+      Container(
+        height: 180,
+        color: Colors.black.withOpacity(0.35),
+      ),
+
     Row(
       children: [
         Positioned(
