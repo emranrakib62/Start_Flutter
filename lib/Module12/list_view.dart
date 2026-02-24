@@ -7,39 +7,88 @@ class module12listview extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Res Widget'),
+        title: Text('Res widget'),
       ),
       body: Column(
         children: [
-          Text('Hello Test',style: TextStyle(fontSize: 25),),
+          Text('Hello test',style: TextStyle(fontSize: 25),),
           SizedBox(height: 20,),
           Container(
-height: 100,
+
+            height: 100,
             width: 100,
             color: Colors.red,
           ),
-          SizedBox(
+
+
+          Container(
             height: 200,
-
-
+            color: Colors.red,
             child: ListView.builder(
-
-              itemCount:50 ,
+              itemCount: 50,
               itemBuilder: (context,index){
                 return Card(
+
                   child: ListTile(
                     leading: Icon(Icons.phone),
                     trailing: Icon(Icons.delete,color: Colors.red,),
-                    title: Text('Rakib',style: TextStyle(fontSize:18 ),),
-                    subtitle: Text('015623658'),
+                    title: Text('Taufiq',style: TextStyle(fontSize: 18),),
+                    subtitle: Text('017952895484'),
                   ),
                 );
               },
+
+            ),
+          ),
+
+
+          Expanded(
+
+
+            child: Container(
+              color: Colors.orange,
+              child: ListView.builder(
+                itemCount: 50,
+                itemBuilder: (context,index){
+                  return Card(
+
+                    child: ListTile(
+                      leading: Icon(Icons.phone),
+                      trailing: Icon(Icons.delete,color: Colors.red,),
+                      title: Text('Rakib',style: TextStyle(fontSize: 18),),
+                      subtitle: Text('01907189767'),
+                    ),
+                  );
+                },
+
+              ),
+            ),
+          ),
+
+          Flexible(
+
+
+            child: Container(
+              color: Colors.green,
+              child: ListView.builder(
+                itemCount: 50,
+                itemBuilder: (context,index){
+                  return Card(
+
+                    child: ListTile(
+                      leading: Icon(Icons.phone),
+                      trailing: Icon(Icons.delete,color: Colors.red,),
+                      title: Text('Taufiq',style: TextStyle(fontSize: 18),),
+                      subtitle: Text('017952895484'),
+                    ),
+                  );
+                },
+
+              ),
             ),
           ),
         ],
       ),
-
     );
   }
 }
