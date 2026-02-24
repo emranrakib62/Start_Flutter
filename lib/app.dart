@@ -6,6 +6,7 @@ import 'package:flutter_projects/Module12/module_12_grid.dart';
 
 import 'Module12/class_1.dart';
 import 'Module12/class_2.dart';
+import 'Module12/list_view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -56,7 +57,7 @@ class MyApp extends StatelessWidget {
         )
       ),
 
-      home: Module12class2(),
+      home: module12listview(),
     );
   }
 }
