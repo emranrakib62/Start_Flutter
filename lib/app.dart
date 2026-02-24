@@ -5,6 +5,7 @@ import 'package:flutter_projects/Module11/class_1.dart';
 import 'package:flutter_projects/Module12/module_12_grid.dart';
 
 import 'Module12/class_1.dart';
+import 'Module12/class_2.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -55,7 +56,7 @@ class MyApp extends StatelessWidget {
         )
       ),
 
-      home: Module12Grid(),
+      home: Module12class2(),
     );
   }
 }
