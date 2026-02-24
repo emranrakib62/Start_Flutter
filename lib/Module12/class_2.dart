@@ -14,7 +14,12 @@ appBar: AppBar(
 
         itemCount:50 ,
         itemBuilder: (context,index){
-          return Text('12 * ${index}=${12*index}',style:TextStyle(fontSize: 30) ,);
+          return ListTile(
+            leading: Icon(Icons.phone),
+            trailing: Icon(Icons.delete,color: Colors.red,),
+            title: Text('Rakib',style: TextStyle(fontSize:18 ),),
+          subtitle: Text('015623658'),
+          );
         },
       ),
 
