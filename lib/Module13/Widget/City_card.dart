@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 class CityCard extends StatelessWidget {
+  final String img,CityName;
   const CityCard({
-    super.key,
+    super.key, required this.img, required this.CityName,
   });
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.network('https://images.pexels.com/photos/1172675/pexels-photo-1172675.jpeg',
+        Image.network(img,
           height:180,
           width:double.infinity,
           fit: BoxFit.cover,
@@ -30,7 +31,7 @@ class CityCard extends StatelessWidget {
                 color: Colors.green,
                 borderRadius: BorderRadius.circular(10)
             ),
-            child: Text('Dhaka',
+            child: Text(CityName,
               style: TextStyle(
                 color: Colors.white,fontSize: 16,
               ),
