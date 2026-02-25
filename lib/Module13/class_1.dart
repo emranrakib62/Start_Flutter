@@ -28,6 +28,12 @@ class module13class1 extends StatelessWidget {
         'img': 'https://i0.wp.com/fromsunrisetosunset.com/wp-content/uploads/2018/10/20180821_113713_4mp_comp-1-scaled.jpg?fit=1024%2C576&ssl=1',
         'Name': 'Sylet',
         'rating': '4.8',
+      },
+
+      {
+        'img': 'https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQG3txokBamv5gnxX0i1-HoK_WxDm1ejjfreQlichJGS2Kx6GIZ5FL-5Y7RcYXHZXyfAkZI0TpTWyQf2vgUZtv8Bfg&s=19',
+        'Name': 'Rangamati',
+        'rating': '7.8',
       }
 
     ];
