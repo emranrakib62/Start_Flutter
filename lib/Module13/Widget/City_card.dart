@@ -11,8 +11,8 @@ class CityCard extends StatelessWidget {
     return Stack(
       children: [
         Image.network(img,
-          height:180,
-          width:double.infinity,
+          height:200,
+          width:300,
           fit: BoxFit.cover,
         ),
         Container(
