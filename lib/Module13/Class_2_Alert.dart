@@ -7,7 +7,14 @@ class Alert extends StatelessWidget {
   Widget build(BuildContext context) {
     void showAlertDialouge(){
       showDialog(context: context, builder: (context)=>AlertDialog(
-
+backgroundColor: Colors.blue.shade500,
+        icon: Icon(Icons.delete,color:Colors.red,size:50),
+        title: Text('This is title'),
+        content: Text('Are you sure..?'),
+        actions: [
+          TextButton(onPressed: (){}, child: Text('yes')),
+          TextButton(onPressed: (){}, child: Text('No')),
+        ],
 
       ));
 
@@ -22,7 +29,9 @@ class Alert extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
 
-        ElevatedButton(onPressed: (){}, child: Text('Alert Dialogue'))
+        ElevatedButton(onPressed: (){
+          showAlertDialouge();
+        }, child: Text('Alert Dialogue'))
 
           ],
         ),
