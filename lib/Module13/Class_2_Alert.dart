@@ -28,6 +28,44 @@ class Alert extends StatelessWidget {
       ));
 
     }
+
+    void showSimpleeDialogue(){
+      showDialog(context: context, builder: (context)=>SimpleDialog(
+        title: Text('Simple Dialogue'),
+        children: [
+          SimpleDialogOption(
+            onPressed: (){
+
+            },
+            child: Text('English'),
+          ),
+          Text('Enter your age..?'),
+          TextField(
+
+
+          ),
+
+        ],
+        
+        
+      ));
+      
+    }
+
+    void showSnackbar(){
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Item Delated'),
+        action: SnackBarAction(label: 'Undo', onPressed: (){}),
+        )
+      );
+    }
+    
+    showBottomSheet(){
+
+
+    }
+
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Alert'),
@@ -40,8 +78,13 @@ class Alert extends StatelessWidget {
 
         ElevatedButton(onPressed: (){
           showAlertDialouge();
-        }, child: Text('Alert Dialogue'))
+        }, child: Text('Alert Dialogue')),
 
+            ElevatedButton(onPressed: (){
+              showSimpleeDialogue();
+            }, child: Text('Simple Dialogue')),
+            ElevatedButton(onPressed: (){showSnackbar();
+            }, child: Text('Show Snackbar'))
           ],
         ),
       ),
