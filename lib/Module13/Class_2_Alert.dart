@@ -95,6 +95,7 @@ mainAxisSize: MainAxisSize.min,
       ),
       body: Center(
 
+
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -116,6 +117,9 @@ mainAxisSize: MainAxisSize.min,
           ],
         ),
       ),
+
+      floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.add,color: Colors.red,),backgroundColor: Colors.greenAccent,),
+
     );
   }
 }
