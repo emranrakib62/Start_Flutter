@@ -60,7 +60,30 @@ class Alert extends StatelessWidget {
       );
     }
     
-    showBottomSheet(){
+    void showBottomSheet(){
+showModalBottomSheet(context: context, builder: (context)=>Container(
+  child: Column(
+mainAxisSize: MainAxisSize.min,
+
+    children: [
+      Text('Choose Option'),
+      ListTile(
+        title: Text('option-1'),
+      ),
+      ListTile(
+        title: Text('option-1'),
+      ),
+      ListTile(
+        title: Text('option-1'),
+      ),
+      ListTile(
+        title: Text('option-1'),
+      ),
+    ],
+  ),
+
+
+));
 
 
     }
@@ -84,7 +107,12 @@ class Alert extends StatelessWidget {
               showSimpleeDialogue();
             }, child: Text('Simple Dialogue')),
             ElevatedButton(onPressed: (){showSnackbar();
-            }, child: Text('Show Snackbar'))
+            }, child: Text('Show Snackbar')),
+
+            ElevatedButton(onPressed: (){
+          showBottomSheet();
+            }, child: Text('Bottom Sheet')),
+
           ],
         ),
       ),
