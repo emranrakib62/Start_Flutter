@@ -1,28 +1,42 @@
 import 'package:flutter/material.dart';
 
-class module13class4 extends StatelessWidget {
-  const module13class4({super.key});
+class Module13Class4 extends StatefulWidget {
+  const Module13Class4({super.key});
 
+  @override
+  State<Module13Class4> createState() => _Module13Class4State();
+}
+
+class _Module13Class4State extends State<Module13Class4> {
+bool selected=false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Animation'),
+        title: const Text('Animation'),
       ),
       body: Column(
         children: [
           GestureDetector(
-            onTap:(){
+            onTap: () {
+              setState(() {
+                selected=!selected;
+              });
 
             },
             child: AnimatedContainer(
-                duration: Duration(microseconds: 300),
-              height: 150,
+              duration: const Duration(milliseconds: 500),
+              height: selected?140:110,
               decoration: BoxDecoration(
+                color:selected?Colors.green:Colors.grey,
                 borderRadius: BorderRadius.circular(12),
+
               ),
               alignment: Alignment.center,
-              child: Text('Product Card'),
+              child: const Text(
+                'Product Card',
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           )
         ],
