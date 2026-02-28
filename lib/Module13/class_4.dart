@@ -11,6 +11,7 @@ class _Module13Class4State extends State<Module13Class4> {
 bool selected=false;
 bool showmsg=false;
 bool isLogin=false;
+bool showpanel=false;
 int cartCount=0;
   @override
   Widget build(BuildContext context) {
@@ -111,9 +112,51 @@ int cartCount=0;
             ),
         ElevatedButton(onPressed: (){
           setState(() {
-            isLogin=true;
+            isLogin=!isLogin;
           });
-        }, child:Text('Login') )
+        }, child:Text('Login') ),
+
+            SizedBox(
+              height: 20,
+            ),
+            SizedBox(
+              height: 200,
+              child: Stack(
+                children: [
+                  Align(
+                    alignment: Alignment.topCenter,
+                      
+                      child: ElevatedButton(onPressed: (){
+                        setState(() {
+                          showpanel=!showpanel;
+                        });
+
+                        Future.delayed(Duration(seconds: 3),(){
+                          setState(() {
+                            showpanel=false;
+                          });
+                        });
+
+                      }, child: Text('Toggle button'))),
+
+
+                  AnimatedPositioned(
+                    duration: Duration(milliseconds: 800),
+                    child: Positioned(
+                      bottom:showpanel? 0:-120,
+                      left: 0,
+                      right: 0,
+                      child: Container(
+                        height: 120,
+                        color: Colors.blue,
+                        alignment: Alignment.center,
+                        child: Text('Bottom pannel'),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            )
 
           ],
         ),
