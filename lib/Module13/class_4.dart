@@ -9,6 +9,7 @@ class Module13Class4 extends StatefulWidget {
 
 class _Module13Class4State extends State<Module13Class4> {
 bool selected=false;
+bool showmsg=false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,6 +39,23 @@ bool selected=false;
                 style: TextStyle(color: Colors.white),
               ),
             ),
+          ),
+          SizedBox(height: 50,),
+          Divider(),
+ElevatedButton(onPressed: (){
+
+  setState(() {
+
+    showmsg=!showmsg;
+
+  });
+
+}, child: Text('Add to Cart')),
+          
+          AnimatedOpacity(
+              opacity: showmsg? 1: 0,
+              duration: Duration(milliseconds: 300),
+            child: Text('Added to cart',style:TextStyle(fontSize:25 ) ,),
           )
         ],
       ),
