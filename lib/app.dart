@@ -13,6 +13,7 @@ import 'Module13/Class_3.dart';
 import 'Module13/class_1.dart';
 import 'Module13/class_4.dart';
 import 'Module13/drag_drop.dart';
+import 'Module14/class_2.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -63,7 +64,7 @@ class MyApp extends StatelessWidget {
         )
       ),
 
-      home: Lifecycle() ,
+      home: module14class2() ,
     );
   }
 }
