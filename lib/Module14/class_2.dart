@@ -21,7 +21,12 @@ class _module14class2State extends State<module14class2> {
            ElevatedButton(onPressed: (){
 Navigator.push(context, MaterialPageRoute(builder: (context)=>Lifecycle()));
              
-           }, child: Text('Home'))
+           }, child: Text('Home')),
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>Lifecycle()));
+
+            }, child: Text('Test'))
+
           ],
         ),
       ),
