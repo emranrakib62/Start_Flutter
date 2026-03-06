@@ -35,6 +35,51 @@ class _module14class3State extends State<module14class3> {
       
           ),
         ),
+body: TabBarView(children: [
+
+  Container(
+    height: 100,
+    width: 50,
+    decoration: BoxDecoration(
+      color: Colors.blue
+    ),
+    child: Text('Home',style: TextStyle(
+      fontSize: 40,
+      color: Colors.red
+    ),),
+  ),
+
+
+  Container(
+    height: 100,
+    width: 50,
+    decoration: BoxDecoration(
+        color: Colors.blue
+    ),
+    child: Text('Fav',style: TextStyle(
+        fontSize: 40,
+        color: Colors.black12
+    ),),
+  ),
+
+
+  Container(
+    height: 100,
+    width: 50,
+    decoration: BoxDecoration(
+        color: Colors.white
+
+    ),
+    child: Text('Setting',style: TextStyle(
+        fontSize: 40,
+        color: Colors.red
+    ),),
+  ),
+
+
+
+]),
+        
       ),
     );
   }
