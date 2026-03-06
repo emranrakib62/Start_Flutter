@@ -16,6 +16,7 @@ import 'Module13/class_1.dart';
 import 'Module13/class_4.dart';
 import 'Module13/drag_drop.dart';
 import 'Module14/class_2.dart';
+import 'Module14/class_3.dart';
 import 'home.dart';
 
 class MyApp extends StatelessWidget {
@@ -72,6 +73,7 @@ class MyApp extends StatelessWidget {
         '/login':(context) => Module11Class1(),
         '/size':(context) =>  Module11Class3(),
         '/nvi':(context) =>  module14class2(),
+        '/bar':(context) =>  module14class3(),
         '/test2':(context){
           final args=ModalRoute.of(context)!.settings.arguments as Map<String,dynamic>;
         return Test2(name: args['name'], price: args['price'], onTap: args['onTap']);
@@ -82,7 +84,7 @@ class MyApp extends StatelessWidget {
       },
 
 
-    initialRoute: '/nvi',
+    initialRoute: '/bar',
     );
   }
 }
