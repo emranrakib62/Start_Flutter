@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../Module11/Class_3.dart';
 import '../Module12/list_view.dart';
 import '../Module13/class_4.dart';
+
 class module14class3 extends StatefulWidget {
   const module14class3({super.key});
 
@@ -13,81 +14,86 @@ class module14class3 extends StatefulWidget {
 class _module14class3State extends State<module14class3> {
   @override
   Widget build(BuildContext context) {
-    return  DefaultTabController(
+    return DefaultTabController(
       length: 3,
       child: Scaffold(
-        appBar:AppBar(
-          title:Text('Tabbar'),
+        appBar: AppBar(
+          title: Text('Tabbar'),
           bottom: TabBar(
-              tabs:[
-                Tab(
-                  icon: Icon(Icons.home),
-                  text: 'Home',
-                ),
-      
-                Tab(
-                  icon: Icon(Icons.favorite),
-                  text: 'fav',
-                ),
-      
-                Tab(
-                  icon: Icon(Icons.settings),
-                  text: 'Setting',
-                ),
-      
-              ]
-
-      
+            tabs: [
+              Tab(
+                icon: Icon(Icons.home),
+                text: 'Home',
+              ),
+              Tab(
+                icon: Icon(Icons.favorite),
+                text: 'fav',
+              ),
+              Tab(
+                icon: Icon(Icons.settings),
+                text: 'Setting',
+              ),
+            ],
           ),
         ),
-body: TabBarView(children: [
 
-  Container(
-    height: 100,
-    width: 50,
-    decoration: BoxDecoration(
-      color: Colors.blue
-    ),
-    child: Text('Home',style: TextStyle(
-      fontSize: 40,
-      color: Colors.red
-    ),),
-  ),
+        body: TabBarView(
+          children: [
 
+            // Container(
+            //   height: 100,
+            //   width: 50,
+            //   decoration: BoxDecoration(
+            //     color: Colors.blue
+            //   ),
+            //   child: Text('Home',style: TextStyle(
+            //     fontSize: 40,
+            //     color: Colors.red
+            //   ),),
+            // ),
 
-  Container(
-    height: 100,
-    width: 50,
-    decoration: BoxDecoration(
-        color: Colors.blue
-    ),
-    child: Text('Fav',style: TextStyle(
-        fontSize: 40,
-        color: Colors.black12
-    ),),
-  ),
+            // Container(
+            //   height: 100,
+            //   width: 50,
+            //   decoration: BoxDecoration(
+            //       color: Colors.blue
+            //   ),
+            //   child: Text('Fav',style: TextStyle(
+            //       fontSize: 40,
+            //       color: Colors.black12
+            //   ),),
+            // ),
 
+            // Container(
+            //   height: 100,
+            //   width: 50,
+            //   decoration: BoxDecoration(
+            //       color: Colors.white
+            //   ),
+            //   child: Text('Setting',style: TextStyle(
+            //       fontSize: 40,
+            //       color: Colors.red
+            //   ),),
+            // ),
 
-  Container(
-    height: 100,
-    width: 50,
-    decoration: BoxDecoration(
-        color: Colors.white
+            // Container(
+            //   height: 100,
+            //   width: 50,
+            //   decoration: BoxDecoration(
+            //       color: Colors.white
+            //   ),
+            //   child: Text('Setting',style: TextStyle(
+            //       fontSize: 40,
+            //       color: Colors.red
+            //   ),),
+            // ),
 
-    ),
-    child: Text('Setting',style: TextStyle(
-        fontSize: 40,
-        color: Colors.red
-    ),),
-  ),
+            Module11Class3(),
+            module12listview(),
+            Module13Class4(),
 
-          Module11Class3(),
-         module12listview(),
-       Module13Class4()
-
-
-]),
-        
+          ],
+        ),
       ),
     );
   }
