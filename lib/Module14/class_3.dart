@@ -21,6 +21,13 @@ class _module14class3State extends State<module14class3> {
         appBar: AppBar(
           title: Text('Tabbar'),
           bottom: TabBar(
+            indicator: BoxDecoration(
+              color: Colors.orange,
+                  borderRadius: BorderRadius.circular(15)
+            ),
+            indicatorPadding: EdgeInsets.all(10),
+            labelColor: Colors.deepPurple,
+            unselectedLabelColor: Colors.black12,
             tabs: [
               Tab(
                 icon: Icon(Icons.home),
