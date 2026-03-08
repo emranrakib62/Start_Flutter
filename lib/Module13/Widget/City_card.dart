@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CityCard extends StatelessWidget {
   final String img,CityName,rating;
   const CityCard({
-    super.key, required this.img,  required this.rating, required this.CityName,
+    super.key, required this.img,required this.rating, required this.CityName,
   });
 
   @override

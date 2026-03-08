@@ -89,7 +89,7 @@ class _module14class3State extends State<module14class3> {
             //   ),),
             // ),
 
-            CityCard(img: img, rating: rating, CityName: CityName),
+            CityCard(img: 'https://i0.wp.com/fromsunrisetosunset.com/wp-content/uploads/2018/10/20180821_113713_4mp_comp-1-scaled.jpg?fit=1024%2C576&ssl=1',CityName: 'Sylet',rating: '6.8',),
             module12listview(),
             Module13Class4(),
 
