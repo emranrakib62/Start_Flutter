@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_projects/Module13/Widget/City_card.dart';
 
 import '../Module11/Class_3.dart';
 import '../Module12/list_view.dart';
@@ -88,7 +89,7 @@ class _module14class3State extends State<module14class3> {
             //   ),),
             // ),
 
-            Module11Class3(),
+            CityCard(img: img, rating: rating, CityName: CityName),
             module12listview(),
             Module13Class4(),
 
