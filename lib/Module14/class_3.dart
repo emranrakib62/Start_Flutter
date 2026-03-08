@@ -91,7 +91,12 @@ class _module14class3State extends State<module14class3> {
 
             CityCard(img: 'https://i0.wp.com/fromsunrisetosunset.com/wp-content/uploads/2018/10/20180821_113713_4mp_comp-1-scaled.jpg?fit=1024%2C576&ssl=1',CityName: 'Sylet',rating: '6.8',),
             module12listview(),
-            Module13Class4(),
+           Column(
+             children: [
+               Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW_B_oZX29-O5rfOBMMBX242M97b1ZVdHT9jZEQ2_sffLg9gegXb22ulM&s'),
+             Text('Custom UI')
+             ],
+           )
 
           ],
         ),
