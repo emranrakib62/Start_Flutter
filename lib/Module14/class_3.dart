@@ -113,7 +113,7 @@ class _module14class3State extends State<module14class3> {
 
           ],
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
 child: ListView(
   children: [
     DrawerHeader(child: Column(
@@ -131,7 +131,50 @@ Text('Emranul Hoque',
 
 
       ],
-    ))
+    )),
+    
+    ListTile(
+      leading: Icon(Icons.home),
+      title: Text('List item-1'),
+    ),
+    Divider(),
+    ListTile(
+      title: Text('List item-1'),
+    ),
+    Divider(),
+    ListTile(
+      title: Text('List item-1'),
+    ),
+    Divider(),
+
+    ListTile(
+      title: Text('List item-1'),
+    ),
+    Divider(),
+
+
+
+    ListTile(
+      title: Text('List item-1'),
+    ),
+    Divider(),
+
+    ListTile(
+      title: Text('List item-1'),
+    ),
+    Divider(),
+
+    ListTile(
+      title: Text('List item-1'),
+    ),
+    Divider(),
+    
+    ListTile(
+      title: Text('List item-1'),
+    ),
+    
+    
+    
   ],
 ),
 
