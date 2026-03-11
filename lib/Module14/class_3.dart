@@ -113,6 +113,30 @@ class _module14class3State extends State<module14class3> {
 
           ],
         ),
+        drawer: Drawer(
+child: ListView(
+  children: [
+    DrawerHeader(child: Column(
+      children: [
+        CircleAvatar(
+          radius:50,
+          backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-zTiD6mYANCuAPowFccUvabOqJ0ovvuCTGp8OF8xdUATWNWyaiyuR9c&s'),
+        ),
+
+
+Text('Emranul Hoque',
+  style: TextStyle(fontSize: 18,fontWeight:FontWeight.bold),) ,
+        Text('emranrakib01862@gmial.com',
+          style: TextStyle(fontSize: 10,),) ,
+
+
+      ],
+    ))
+  ],
+),
+
+        ),
+
       ),
     );
   }
