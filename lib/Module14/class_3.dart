@@ -20,28 +20,34 @@ class _module14class3State extends State<module14class3> {
       child: Scaffold(
         appBar: AppBar(
           title: Text('Tabbar'),
-          bottom: TabBar(
-            indicator: BoxDecoration(
+          bottom: PreferredSize(
+            preferredSize: Size.fromHeight(50),
+            child: Container(
               color: Colors.orange,
-                  borderRadius: BorderRadius.circular(15)
+              child: TabBar(
+                indicator: BoxDecoration(
+                  color: Colors.orange,
+                      borderRadius: BorderRadius.circular(15)
+                ),
+                indicatorPadding: EdgeInsets.all(10),
+                labelColor: Colors.deepPurple,
+                unselectedLabelColor: Colors.black12,
+                tabs: [
+                  Tab(
+                    icon: Icon(Icons.home),
+                    text: 'Home',
+                  ),
+                  Tab(
+                    icon: Icon(Icons.favorite),
+                    text: 'fav',
+                  ),
+                  Tab(
+                    icon: Icon(Icons.settings),
+                    text: 'Setting',
+                  ),
+                ],
+              ),
             ),
-            indicatorPadding: EdgeInsets.all(10),
-            labelColor: Colors.deepPurple,
-            unselectedLabelColor: Colors.black12,
-            tabs: [
-              Tab(
-                icon: Icon(Icons.home),
-                text: 'Home',
-              ),
-              Tab(
-                icon: Icon(Icons.favorite),
-                text: 'fav',
-              ),
-              Tab(
-                icon: Icon(Icons.settings),
-                text: 'Setting',
-              ),
-            ],
           ),
         ),
 
