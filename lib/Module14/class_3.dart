@@ -119,7 +119,7 @@ child: ListView(
     DrawerHeader(child: Column(
       children: [
         CircleAvatar(
-          radius:50,
+          radius:35,
           backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-zTiD6mYANCuAPowFccUvabOqJ0ovvuCTGp8OF8xdUATWNWyaiyuR9c&s'),
         ),
 
@@ -127,7 +127,7 @@ child: ListView(
 Text('Emranul Hoque',
   style: TextStyle(fontSize: 18,fontWeight:FontWeight.bold),) ,
         Text('emranrakib01862@gmial.com',
-          style: TextStyle(fontSize: 10,),) ,
+          style: TextStyle(fontSize: 14),) ,
 
 
       ],
