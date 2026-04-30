@@ -1,9 +1,25 @@
 import 'package:flutter/material.dart';
-class Module11Class3 extends StatelessWidget {
+import 'package:flutter/services.dart';
+ class Module11Class3 extends StatefulWidget {
   const Module11Class3({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  State<Module11Class3> createState() => _Module11Class3State();
+}
+
+
+class _Module11Class3State extends State<Module11Class3> {
+  void initState(){
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+    ]);
+  }
+
+
+
+
+   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
     double screenWidth = screenSize.width;
     double screenHeight = screenSize.height;
