@@ -90,7 +90,7 @@ class MyApp extends StatelessWidget {
       },
 
 
-    initialRoute: '/bottomNav',
+    initialRoute: '/size',
     );
   }
 }
